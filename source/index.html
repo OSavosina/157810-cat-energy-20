@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://simbo.github.io/css-reset-and-normalize/reset-and-normalize.min.css"/>
+    <link rel="stylesheet" href="/source/css/fonts.css"/>
+    <link rel="stylesheet" href="/source/css/style.css"/>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container-wrapper">
+        <header class="container-inner page-header">
+            <div class="page-header__title">
+                <img src="/source/img/mobile/logo-picture-mobile.svg" alt=""/>
+                <img src="/source/img/mobile/logo-text-mobile.svg" alt=""/>
+                <button class="button button-icon"><img src="/source/img/icons/layout-icons/icon-menu-burger.svg" alt=""/></button>
+            </div>
+            <nav class="menu-vertical">
+                <a href="" class="menu-vertical__item">Главная</a>
+                <a href="" class="menu-vertical__item">Каталог продукции</a>
+                <a href="" class="menu-vertical__item">Подбор программы</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container-wrapper">
+        <div class="container-inner infoblock-energy">
+            <div class="infoblock-energy__picture-main">
+                <picture>
+                    <source srcset="/source/img/mobile/index-background-mobile.png">
+                    <img src="/source/img/mobile/index-background-mobile.png">
+                </picture>
+            </div>
+            <div class="infoblock-energy__details">
+                <div class="infoblock-energy__title">Функциональное питание для котов</div>
+                <div class="infoblock-energy__sub-title">Занялся собой? Займись котом!</div>
+                <div class="infoblock-energy__picture-additional">
+                    <picture>
+                        <source srcset="/source/img/mobile/index-can-mobile.png">
+                        <img src="/source/img/mobile/index-can-mobile.png">
+                    </picture>
+                </div>
+                <a href=""><button class="button button--green infoblock-energy__button">Подобрать программу</button></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-wrapper">
+            <ul class="container-inner catalog-preview">
+                <li class="catalog-preview__item">
+                    <div class="catalog-preview-item__header">
+                        <div class="catalog-preview-item__icon"><img src="/source/img/icons/group-icons/cat-slim.svg" class="catalog-preview-item__icon-image" alt=""/></div>
+                        <div class="catalog-preview-item__title">Похудение</div>
+                    </div>
+                    <div class="container-text catalog-preview-item__container-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</div>
+                    <a href=""><button class="button catalog-preview-item__button">Каталог Slim<img src="/source/img/icons/layout-icons/icon-arrow-right.svg" class="catalog-preview-item__icon-arrow" alt=""/></button></a>
+                </li>
+                <li class="catalog-preview__item">
+                    <div class="catalog-preview-item__header">
+                        <div class="catalog-preview-item__icon"><img src="/source/img/icons/group-icons/cat-pro.svg" class="catalog-preview-item__icon-image" alt=""/></div>
+                        <div class="catalog-preview-item__title">Набор массы</div>
+                    </div>
+                    <div class="container-text catalog-preview-item__container-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</div>
+                    <a href=""><button class="button catalog-preview-item__button">Каталог Pro<img src="/source/img/icons/layout-icons/icon-arrow-right.svg" class="catalog-preview-item__icon-arrow" alt=""/></button></a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-wrapper">
+            <section class="container-inner advantage-group">
+                <h1 class="container-h1">Как это работает</h1>
+                <ul class="advantage-group__list">
+                    <li class="advantage-group__item">
+                        <div class="advantage-group__icon"><img src="/source/img/icons/group-icons/icon-leaf.svg" class="advantage-group__icon-img" alt=""/></div>
+                        <span class="container-text">Функциональное питание содержит только полезные питательные вещества.</span>
+                    </li>
+                    <li class="advantage-group__item">
+                        <div class="advantage-group__icon"><img src="/source/img/icons/group-icons/icon-tub.svg" class="advantage-group__icon-img" alt=""/></div>
+                        <span class="container-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+                    </li>
+                    <li class="advantage-group__item">
+                        <div class="advantage-group__icon"><img src="/source/img/icons/group-icons/icon-eat.svg" class="advantage-group__icon-img" alt=""/></div>
+                        <span class="container-text">Замените один-два приема обычной еды на наше функциональное питание.</span>
+                    </li>
+                    <li class="advantage-group__item">
+                        <div class="advantage-group__icon"><img src="/source/img/icons/group-icons/icon-alarm.svg" class="advantage-group__icon-img" alt=""/></div>
+                        <span class="container-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</div>
+<div class="container-wrapper page-footer">
+    <footer class="container-inner">
+        <div class="page-footer__logo">
+            <img src="/source/img/mobile/logo-text-mobile.svg" alt=""/>
+        </div>
+        <ul class="social-list page-footer__social-list">
+            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-vkontakte.svg" alt=""/></li>
+            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-instagram.svg" alt=""/></li>
+            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-facebook.svg" alt=""/></li>
+        </ul>
+        <div class="page-footer-details">
+            <span class="container-text">HTML Academy</span>
+            <img src="/source/img/htmlacademy.svg" alt="" width="27" height="34"/>
+        </div>
+    </footer>
+</div>
+</body>
 </html>
