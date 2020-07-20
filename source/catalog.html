@@ -4,80 +4,81 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://simbo.github.io/css-reset-and-normalize/reset-and-normalize.min.css"/>
-    <link rel="stylesheet" href="/source/css/fonts.css"/>
-    <link rel="stylesheet" href="/source/css/style.css"/>
 </head>
 <body>
 <div class="page-wrapper">
-    <div class="container-wrapper">
-        <header class="container-inner page-header">
+    <header class="container-wrapper page-header">
+        <div class="container-inner">
             <div class="page-header__title">
-                <img src="/source/img/mobile/logo-picture-mobile.svg" alt=""/>
-                <img src="/source/img/mobile/logo-text-mobile.svg" alt=""/>
-                <button class="button button-icon"><img src="/source/img/icons/layout-icons/icon-menu-burger.svg" alt=""/></button>
+                <a href="index.html">
+                    <img src="img/logo-mobile.svg" alt="">
+                </a>
+                <button class="button-icon page-header__button-icon" type="button"><img src="img/icon-menu-burger.svg" alt=""></button>
             </div>
-            <nav class="menu-vertical">
-                <a href="" class="menu-vertical__item">Главная</a>
-                <a href="" class="menu-vertical__item">Каталог продукции</a>
-                <a href="" class="menu-vertical__item">Подбор программы</a>
+            <nav class="menu-vertical page-header__menu-vertical">
+                <a href="index.html" class="menu-vertical__item">Главная</a>
+                <a href="catalog.html" class="menu-vertical__item">Каталог продукции</a>
+                <a href="form.html" class="menu-vertical__item">Подбор программы</a>
             </nav>
-        </header>
-    </div>
-    <div class="container-wrapper">
-        <section class="container-inner">
-            <h1 class="container-h1">Каталог продукции</h1>
-            <div class="catalog-list">
-                <div class="catalog-list__item card-product">
-                    <div class="card-product__details">
-                        <div class="card-product__image"><img src="product-image.png" alt=""/></div>
-                        <div class="card-product__description">
-                            <div class="card-product__title">Cat Energy PRO 500 г</div>
-                            <table class="card-product__options">
-                                <tbody>
-                                <tr>
-                                    <td>Объем</td>
-                                    <td>500г</td>
-                                </tr>
-                                <tr>
-                                    <td>Вкус</td>
-                                    <td>Курица</td>
-                                </tr>
-                                <tr>
-                                    <td>Цена</td>
-                                    <td>700Р</td>
-                                </tr>
-                                </tbody>
-                            </table>
+        </div>
+    </header>
+    <section class="container-wrapper">
+        <div class="container-inner">
+            <h1 class="container-title-large">Каталог продукции</h1>
+            <div class="catalog">
+                <ul class="catalog-list">
+                    <li class="catalog-list__item card-product">
+                        <div class="card-product__details">
+                            <a href="product.html" class="card-product__image"><img src="img/product-image.png" alt=""></a>
+                            <div class="card-product__description">
+                                <a href="product.html"><h2 class="card-product__title">Cat Energy PRO 500 г</h2></a>
+                                <table class="card-product__options">
+                                    <tbody>
+                                    <tr>
+                                        <td>Объем</td>
+                                        <td>500г</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Вкус</td>
+                                        <td>Курица</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цена</td>
+                                        <td>700Р</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <button type="button" class="button button-green">Заказать</button>
+                        <a href="order.html" class="button button--green">Заказать</a>
+                    </li>
+                </ul>
+                <div class="loading catalog__loading">
+                    <h3 class="loading__title">Показать еще 100500 товаров</h3>
+                    <p class="loading__description">На самом деле вкусов гораздо больше!</p>
+                    <a href="products-new.html" class="button button--grey">Показать все</a>
                 </div>
             </div>
-            <div class="catalog-loading catalog-list__catalog-loading">
-                <div class="catalog-loading__button-wrapper"><button type="button" class="button button-icon">+</button></div>
-                <div class="catalog-loading__title">Показать еще 100500 товаров</div>
-                <p class="catalog-loading__description">На самом деле вкусов гораздо больше!</p>
-                <div class="catalog-loading__button-wrapper"><button type="button" class="button button--grey">+</button></div>
-            </div>
-        </section>
-    </div>
-</div>
-<div class="container-wrapper page-footer">
-    <footer class="container-inner">
-        <div class="page-footer__logo">
-            <img src="/source/img/mobile/logo-text-mobile.svg" alt=""/>
         </div>
+    </section>
+</div>
+<footer class="container-wrapper page-footer">
+    <div class="container-inner">
+        <a href="index.html" class="page-footer__logo">
+            <img src="img/logo-text-mobile.svg" alt="">
+        </a>
         <ul class="social-list page-footer__social-list">
-            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-vkontakte.svg" alt=""/></li>
-            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-instagram.svg" alt=""/></li>
-            <li class="social-list__item"><img src="/source/img/icons/group-icons/social-icon-facebook.svg" alt=""/></li>
+            <li class="social-list__item"><a href="" title="vkontakte"></a></li>
+            <li class="social-list__item"><a href="" title="instagram"></a></li>
+            <li class="social-list__item"><a href="" title="facebook"></a></li>
         </ul>
         <div class="page-footer-details">
-            <span class="container-text">HTML Academy</span>
-            <img src="/source/img/htmlacademy.svg" alt="" width="27" height="34"/>
+            <a href="https://htmlacademy.ru/">
+                <span class="container-text">HTML Academy</span>
+                <img src="img/htmlacademy.svg" alt="" width="27" height="34">
+            </a>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 </body>
 </html>
