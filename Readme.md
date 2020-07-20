@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Савосина Оксана](https://up.htmlacademy.ru/adaptive/20/user/157810).
-* Наставник: [Зубов Сергей](https://htmlacademy.ru/profile/serj)..
+* Наставник: [Зубов Сергей](https://htmlacademy.ru/profile/serj).
 
 ---
 
