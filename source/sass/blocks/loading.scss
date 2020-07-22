@@ -1,0 +1,29 @@
+.loading {
+  width: 100%;
+  padding: 80px 0 25px;
+  border-top: 1px solid $grey-light;
+  background-image: url("/img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 26px;
+  background-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading__title {
+  @include font-oswald-regular(16, 20);
+  color: $color-black;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.loading__description {
+  @include font-arial(12, 16);
+  color: $grey-bitumen;
+  margin-bottom: 21px;
+}
+
+.loading__button {
+  width: 100%;
+}

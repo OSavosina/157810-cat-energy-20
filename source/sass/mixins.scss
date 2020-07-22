@@ -1,0 +1,13 @@
+@mixin font-oswald-regular($size,$line-height) {
+  font-size: ($size/16)+rem;
+  line-height: ($line-height/16)+rem;
+  font-family: 'Oswaldregular';
+  font-weight: normal;
+}
+
+@mixin font-arial($size,$line-height) {
+  font-size: ($size/16)+rem;
+  line-height: ($line-height/16)+rem;
+  font-family: 'Arial';
+  font-weight: normal;
+}

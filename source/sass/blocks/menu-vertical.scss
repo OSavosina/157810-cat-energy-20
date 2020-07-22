@@ -1,0 +1,17 @@
+.menu-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-vertical__item {
+  width: 100%;
+  @include font-oswald-regular(16, 18);
+  text-transform: uppercase;
+  color: $color-black;
+  border-bottom: 1px solid $grey-light;
+  padding: 16px 0;
+  background: $grey-limestone;
+  text-align: center;
+}

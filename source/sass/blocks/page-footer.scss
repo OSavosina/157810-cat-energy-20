@@ -1,0 +1,30 @@
+.page-footer {
+  margin-top: -257px;
+  height: 257px;
+  background-color: $grey-limestone;
+}
+
+.page-footer__title {
+  @include font-oswald-regular(16, 18);
+  text-transform: uppercase;
+}
+
+.page-footer__logo {
+  display: block;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid $grey-light;
+}
+
+.page-footer-details, .page-footer-details__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $grey-bitumen;
+  padding: 24px 20px;
+}
+
+.page-footer-details__link {
+  width: 100%;
+  padding: 0;
+}
