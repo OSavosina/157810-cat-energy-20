@@ -38,10 +38,9 @@
 
 .card-product__options {
   width: 100%;
-  
-  td {
-    padding: 2px 0;
-    @include font-arial(12, 16);
-    color: $grey-bitumen;
-  }
+    td {
+      padding: 2px 0;
+      @include font-arial(12, 16);
+      color: $grey-bitumen;
+    }
 }
