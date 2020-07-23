@@ -1,6 +1,9 @@
+@import "../../node_modules/css-reset-and-normalize/scss/reset-and-normalize";
 @import "colors";
+@import "fonts";
 @import "mixins";
-@import "layout";
+@import "buttons";
+@import "page";
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/menu-vertical";
@@ -11,3 +14,8 @@
 @import "blocks/card-product";
 @import "blocks/catalog-list";
 @import "blocks/loading";
+
+
+a {
+  text-decoration: none;
+}

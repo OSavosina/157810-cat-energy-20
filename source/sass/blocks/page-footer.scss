@@ -16,15 +16,11 @@
   border-bottom: 1px solid $grey-light;
 }
 
-.page-footer-details, .page-footer-details__link {
+.page-footer__details {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: $grey-bitumen;
   padding: 24px 20px;
-}
-
-.page-footer-details__link {
-  width: 100%;
-  padding: 0;
 }

@@ -45,7 +45,7 @@
   color: $color-black;
 }
 
-.catalog-preview__container-text {
+.catalog-preview__text-general {
   border-bottom: 1px solid $grey-light;
   padding: 0 0 23px;
 }
@@ -63,7 +63,7 @@
 
   &:after {
     content: '';
-    background-image: url("/img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-size: 32px;
     background-repeat: no-repeat;
     background-position: center;

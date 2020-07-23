@@ -20,7 +20,12 @@
   @include font-oswald-regular(16, 20);
   color: $color-black;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  padding-right: 40px;
+}
+
+.card-product__title-wrapper {
+  display: block;
+  margin-bottom: 14px;
 }
 
 .card-product__description {
@@ -34,7 +39,7 @@
 .card-product__options {
   width: 100%;
   
-  & td {
+  td {
     padding: 2px 0;
     @include font-arial(12, 16);
     color: $grey-bitumen;
