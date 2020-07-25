@@ -36,5 +36,8 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "css-reset-and-normalize": "^2.1.0"
   }
 }

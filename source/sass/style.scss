@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+@import "../../node_modules/css-reset-and-normalize/scss/reset-and-normalize";
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "buttons";
+@import "page";
+@import "blocks/page-header";
+@import "blocks/page-footer";
+@import "blocks/menu-vertical";
+@import "blocks/infoblock-energy";
+@import "blocks/catalog-preview";
+@import "blocks/advantage-group";
+@import "blocks/social-list";
+@import "blocks/card-product";
+@import "blocks/catalog-list";
+@import "blocks/loading";
+
+
+a {
+  text-decoration: none;
+}

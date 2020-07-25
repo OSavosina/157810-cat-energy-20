@@ -1,0 +1,15 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+  border-bottom: 1px solid $grey-light;
+}
+
+.social-list__item {
+  margin: 0 16px;
+}
+
+.social-list__icon {
+  display: block;
+}

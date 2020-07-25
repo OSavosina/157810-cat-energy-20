@@ -1,0 +1,48 @@
+.card-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-product__details {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-product__image-wrapper {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-product__title {
+  @include font-oswald-regular(16, 20);
+  color: $color-black;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+
+.card-product__title-wrapper {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.card-product__description {
+  width: 50%;
+}
+
+.card-product__button {
+  width: 100%;
+}
+
+.card-product__options {
+  width: 100%;
+
+  td {
+    padding: 2px 0;
+    color: $grey-bitumen;
+
+    @include font-arial(12, 16);
+  }
+}
