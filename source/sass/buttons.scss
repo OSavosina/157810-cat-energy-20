@@ -8,6 +8,7 @@
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
+
   @include font-oswald-regular(20, 54);
 
   &--green {

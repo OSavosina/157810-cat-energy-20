@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
 
-  &:before {
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -40,9 +40,10 @@
 }
 
 .catalog-preview__title {
-  @include font-oswald-regular(24, 37);
   text-transform: uppercase;
   color: $color-black;
+
+  @include font-oswald-regular(24, 37);
 }
 
 .catalog-preview__text-general {
@@ -54,14 +55,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  @include font-oswald-regular(16, 16);
   color: $color-black;
   text-transform: uppercase;
   padding: 20px 0;
   cursor: pointer;
   position: relative;
 
-  &:after {
+  @include font-oswald-regular(16, 16);
+
+  &::after {
     content: "";
     background-image: url("../img/icon-right-arrow-long.svg");
     background-size: 32px;
