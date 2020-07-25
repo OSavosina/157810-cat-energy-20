@@ -22,7 +22,7 @@
   justify-content: center;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -62,7 +62,7 @@
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     background-image: url("../img/icon-right-arrow-long.svg");
     background-size: 32px;
     background-repeat: no-repeat;
