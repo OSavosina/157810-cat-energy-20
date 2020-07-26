@@ -14,11 +14,13 @@
   &--green {
     background-color: $main-theme;
     color: $color-white;
+    display: block;
   }
 
   &--grey {
     background-color: $grey-limestone;
     color: $grey-bitumen;
+    display: block;
   }
 }
 

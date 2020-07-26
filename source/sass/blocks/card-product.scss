@@ -17,10 +17,11 @@
 }
 
 .card-product__title {
-  @include font-oswald-regular(16, 20);
   color: $color-black;
   text-transform: uppercase;
   padding-right: 40px;
+
+  @include font-oswald-regular(16, 20);
 }
 
 .card-product__title-wrapper {

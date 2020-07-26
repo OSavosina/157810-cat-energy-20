@@ -1,0 +1,91 @@
+.section-example {
+  background: $grey-mouse;
+  padding: 20px;
+}
+
+.section-example__list {
+  margin: 25px 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-example__item {
+  width: 124px;
+  height: 60px;
+  border: 1px solid $grey-middle;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  @include font-oswald-regular(24, 24);
+}
+
+.section-example__sub-text {
+  position: absolute;
+  bottom: -20px;
+  top: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 82px;
+  text-align: center;
+  background: $grey-mouse;
+  padding: 5px;
+  text-transform: lowercase;
+
+  @include font-arial(12, 12);
+}
+
+.section-example__result {
+  margin: 0 0 42px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-oswald-regular(14, 20);
+}
+
+.section-example__slider-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @include font-oswald-regular(16, 20);
+}
+
+.section-example__slider-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0 20px;
+}
+
+.section-example__slider-progress-bar {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid $grey-middle;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 12px;
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 6px;
+    position: absolute;
+    background: $main-theme;
+    border-radius: 6px;
+    margin: 0 6px;
+  }
+}
