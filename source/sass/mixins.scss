@@ -13,3 +13,16 @@ $font-size-default: 16;
   font-family: "Arial", sans-serif;
   font-weight: normal;
 }
+
+@mixin form-element() {
+  border: 1px solid $grey-mouse;
+
+  &:hover {
+    border: 1px solid $grey-middle;
+  }
+
+  &:focus {
+    border-color: $grey-bitumen;
+    border-radius: 0;
+  }
+}

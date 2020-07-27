@@ -1,21 +1,36 @@
-.page {
+.page,
+body {
   height: 100%;
 }
 
 .page__title-large {
-  @include font-oswald-regular(36, 40);
   margin-bottom: 36px;
   margin-top: 27px;
+
+  @include font-oswald-regular(36, 40);
+}
+
+.page__title-middle {
+  margin-bottom: 35px;
+  margin-top: 28px;
+
+  @include font-oswald-regular(24, 24);
 }
 
 .page__text-general {
-  @include font-arial(14, 18);
   color: $grey-bitumen;
+
+  @include font-arial(14, 18);
 }
 
 .page-wrapper {
   min-height: 100%;
-  padding-bottom: 257px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-inner {
+  flex: 1 1 auto;
 }
 
 .page-container {
