@@ -1,8 +1,31 @@
+.catalog-preview__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 82px auto 0;
+  }
+}
+
 .catalog-preview__item {
   margin-top: 20px;
   padding: 20px 20px 0;
   box-sizing: border-box;
   background: $grey-limestone;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 100%;
+    padding: 70px 50px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      margin-right: 80px;
+    }
+
+    margin-bottom: 36px;
+  }
 }
 
 .catalog-preview__header {
@@ -10,6 +33,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    justify-content: space-between;
+    position: relative;
+    height: 40px;
+  }
 }
 
 .catalog-preview__icon {
@@ -32,23 +61,64 @@
     border-radius: 100%;
     background: $main-theme;
   }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 200px;
+    height: 200px;
+    order: 2;
+    margin: auto 0 auto 0;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+    }
+  }
 }
 
 .catalog-preview__icon-image {
   display: block;
   position: relative;
+
+  &--slim {
+    width: 36px;
+    height: 50px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 140px;
+      height: 192px;
+    }
+  }
+
+  &--pro {
+    width: 67px;
+    height: 29px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 268px;
+      height: 112px;
+    }
+  }
 }
 
 .catalog-preview__title {
   text-transform: uppercase;
   color: $color-black;
 
-  @include font-oswald-regular(24, 37);
+  @include font-oswald-regular(24, 36);
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-oswald-regular(36, 36);
+  }
 }
 
 .catalog-preview__text-general {
   border-bottom: 1px solid $grey-light;
   padding: 0 0 23px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-right: 217px;
+    border-bottom: none;
+  }
 }
 
 .catalog-preview__button {
