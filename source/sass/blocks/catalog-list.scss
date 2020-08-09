@@ -5,7 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 164px auto 0 -80px;
+  }
+}
+
+.catalog-list__loading {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 164px auto 0;
+    flex-grow: 1;
   }
 }

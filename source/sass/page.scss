@@ -55,17 +55,16 @@ body {
 }
 
 .page-container__inner {
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
   padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
