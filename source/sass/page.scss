@@ -8,6 +8,13 @@ body {
   margin-top: 27px;
 
   @include font-oswald-regular(36, 40);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    margin-top: 45px;
+
+    @include font-oswald-regular(60, 60);
+  }
 }
 
 .page__title-middle {
@@ -21,6 +28,10 @@ body {
   color: $grey-bitumen;
 
   @include font-arial(14, 18);
+
+  @media (min-width: $tablet-width) {
+    @include font-arial(16, 24);
+  }
 }
 
 .page-wrapper {
@@ -33,14 +44,27 @@ body {
   flex: 1 1 auto;
 }
 
+.page-inner__menu-header {
+  & .menu-header__item {
+    color: $color-black;
+  }
+}
+
 .page-container {
   width: 100%;
 }
 
 .page-container__inner {
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
   padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

@@ -1,15 +1,18 @@
 .loading {
   padding: 80px 0 25px;
   border-top: 1px solid $grey-light;
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center 26px;
+  background: url("../img/icon-plus-mobile.svg") no-repeat center 26px transparent;
   background-size: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $grey-light;
+    padding: 160px 40px 40px;
+    background-position: center 80px;
+  }
 }
 
 .loading__title {
@@ -17,12 +20,22 @@
   color: $color-black;
   text-transform: uppercase;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    margin: 0 auto 8px;
+  }
 }
 
 .loading__description {
   @include font-arial(12, 16);
   color: $grey-bitumen;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    margin: 0 auto 21px;
+  }
 }
 
 .loading__button {

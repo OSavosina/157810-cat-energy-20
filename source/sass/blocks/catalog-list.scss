@@ -1,9 +1,19 @@
 .catalog-list {
   margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 164px auto 0 -80px;
+  }
 }
 
-.catalog-list__item {
-  border-top: 1px solid $grey-light;
-  padding: 20px;
-  box-sizing: border-box;
+.catalog-list__loading {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }

@@ -1,5 +1,13 @@
 .infoblock-energy__inner {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    max-width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
 }
 
 .infoblock-energy__picture-main {
@@ -9,7 +17,21 @@
   top: 0;
   left: 0;
   text-align: center;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background: url("../img/index-background-mobile@1x.jpg") center center no-repeat $main-theme;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    height: 696px;
+    position: static;
+    background: url("../img/index-background-desktop@1x.jpg") 0 0 no-repeat $main-theme;
+    background-size: cover;
+    margin-right: -20px;
+    margin-top: -66px;
+  }
 }
 
 .infoblock-energy__details {
@@ -18,6 +40,24 @@
   text-align: center;
   position: relative;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    padding: 62px 0 0;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50vw;
+    max-width: 610px;
+    padding: 126px 0 0 60px;
+    text-align: left;
+    margin: 0;
+    box-sizing: border-box;
+  }
 }
 
 .infoblock-energy__title {
@@ -25,6 +65,13 @@
   margin-bottom: 25px;
 
   @include font-oswald-regular(36,36);
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    margin-bottom: 41px;
+
+    @include font-oswald-regular(60,60);
+  }
 }
 
 .infoblock-energy__sub-title {
@@ -32,9 +79,38 @@
   margin-bottom: 29px;
 
   @include font-oswald-regular(14,14);
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    text-transform: uppercase;
+    margin-bottom: 49px;
+
+    @include font-oswald-regular(20,20);
+  }
+}
+
+.infoblock-energy__picture-additional {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    text-align: center;
+    order: 2;
+    position: relative;
+    margin: -98px 0 0 -61px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    position: absolute;
+    right: -470px;
+  }
 }
 
 .infoblock-energy__button {
   width: 100%;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }

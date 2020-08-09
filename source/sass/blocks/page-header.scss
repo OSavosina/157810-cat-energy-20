@@ -1,5 +1,11 @@
 .page-header__inner {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-header__title {
@@ -11,11 +17,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 190px;
+    border-bottom: none;
+  }
 }
 
 .page-header__button-icon {
   width: 44px;
   height: 44px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__logo {
