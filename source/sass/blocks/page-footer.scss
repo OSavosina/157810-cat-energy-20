@@ -20,16 +20,11 @@
 }
 
 .page-footer__details {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: $grey-bitumen;
   padding: 24px 20px;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-  }
 }
 
 .page-footer___container {

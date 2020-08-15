@@ -10,19 +10,56 @@
   margin-right: 14px;
 
   @include font-oswald-regular(16, 18);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald-regular(20, 30);
+  }
 }
 
 .page-form__description {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 
   @include font-oswald-regular(14, 18);
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    margin: 0 40px 66px;
+
+    @include font-oswald-regular(20, 30);
+  }
+}
+
+.page-form__form-program {
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+  }
 }
 
 .page-form__fields-list {
   padding: 30px 0 20px;
   border-top: 1px solid $grey-mouse;
   border-bottom: 1px solid $grey-mouse;
+
+  @media (min-width: $tablet-width) {
+    margin: 72px 0;
+    border: 1px solid $grey-mouse;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 1 auto;
+    padding: 25px;
+    margin-top: 0;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .page-form__item {
+      margin: 0;
+    }
+  }
 }
 
 .page-form__fields-items {
@@ -30,10 +67,83 @@
 }
 
 .page-form__textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
 
   @include form-element();
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    margin: 52px 0 51px;
+  }
+}
+
+.page-form__contacts-list {
+  @media (min-width: $tablet-width) {
+    margin: 76px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+    & .page-form__item {
+      flex: 1 1 auto;
+    }
+
+    & .page-form__item:first-child {
+      margin-right: 76px;
+    }
+  }
+}
+
+.page-form__user-info-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: start;
+  }
+}
+
+.page-form__user-info {
+  @media (min-width: $desktop-width) {
+    flex: 1 1 auto;
+    margin-right: 80px;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .page-form__item {
+      margin: 0;
+    }
+  }
+}
+
+.page-form__adding-products {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & .page-form__fields-item {
+      width: 50%;
+    }
+
+    & .page-form__item {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.page-form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .page-form__input-text {
@@ -53,6 +163,12 @@
   margin-right: 16px;
 
   @include form-element();
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
 }
 
 .page-form__input-radio {
@@ -62,15 +178,35 @@
   margin-right: 16px;
 
   @include form-element();
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
 }
 
 .page-form__button {
   width: 100%;
   margin: 34px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 567px;
+    margin-right: 80px;
+  }
 }
 
 .page-form__text-general {
   text-align: center;
   margin: 0 0 32px;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

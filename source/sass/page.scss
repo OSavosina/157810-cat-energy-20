@@ -5,7 +5,7 @@ body {
 
 .page__title-large {
   margin-bottom: 36px;
-  margin-top: 27px;
+  padding-top: 27px;
 
   @include font-oswald-regular(36, 40);
 
