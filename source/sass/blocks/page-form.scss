@@ -134,7 +134,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
+    & .page-form__fields-item {
+      width: 25%;
+    }
   }
 }
 
