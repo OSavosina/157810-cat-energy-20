@@ -30,7 +30,7 @@
     background: url("../img/index-background-desktop@1x.jpg") 0 0 no-repeat $main-theme;
     background-size: cover;
     margin-right: -20px;
-    margin-top: -66px;
+    margin-top: -120px;
   }
 }
 
@@ -96,14 +96,14 @@
     text-align: center;
     order: 2;
     position: relative;
-    margin: -98px 0 0 -61px;
+    margin: -82px 0 0 -76px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     position: absolute;
-    right: -470px;
+    right: -415px;
   }
 }
 

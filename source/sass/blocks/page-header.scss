@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 54px;
+  }
 }
 
 .page-header__title {

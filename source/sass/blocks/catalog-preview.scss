@@ -17,6 +17,7 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 100%;
     padding: 70px 50px 57px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +25,9 @@
       margin-right: 80px;
     }
 
+    height: 374px;
     margin-bottom: 36px;
+    padding: 50px 52px;
   }
 }
 
@@ -73,6 +76,17 @@
       height: 200px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    margin-right: 62px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .catalog-preview__icon-image {
@@ -87,6 +101,11 @@
       width: 140px;
       height: 192px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+    }
   }
 
   &--pro {
@@ -97,6 +116,11 @@
       width: 268px;
       height: 112px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+    }
   }
 }
 
@@ -106,7 +130,7 @@
 
   @include font-oswald-regular(24, 36);
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include font-oswald-regular(36, 36);
   }
 }
@@ -116,8 +140,14 @@
   padding: 0 0 23px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin-right: 217px;
     border-bottom: none;
+    margin: 24px 217px 52px 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    margin: 40px 0 27px;
   }
 }
 
