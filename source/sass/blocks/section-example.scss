@@ -17,7 +17,7 @@
 }
 
 .section-example__list {
-  margin: 25px 0 34px;
+  margin: 23px 0 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +30,7 @@
 
 .section-example__item {
   width: 124px;
-  height: 60px;
+  height: 57px;
   border: 1px solid $grey-middle;
   border-radius: 3px;
   position: relative;
@@ -81,7 +81,7 @@
 }
 
 .section-example__result {
-  margin: 0 0 42px;
+  margin: 0 0 33px;
   text-align: center;
   text-transform: uppercase;
 
@@ -129,12 +129,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px 0 20px;
+  padding: 32px 0 34px;
 }
 
 .section-example__slider-image {
   @media (min-width: $tablet-width) {
-    margin-top: -148px;
+    margin-top: -185px;
   }
 }
 
@@ -179,10 +179,15 @@
 }
 
 .section-example__description {
+
+  & .page__title-large {
+    padding-top: 27px;
+    margin-bottom: 34px;
+  }
+
   @media (min-width: $tablet-width) {
     background: $color-white;
     display: flex;
-    width: 100vw;
     border-top: 1px solid $grey-mouse;
   }
 

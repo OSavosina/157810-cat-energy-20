@@ -1,5 +1,6 @@
 .infoblock-energy__inner {
   position: relative;
+  margin-bottom: 132px;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -42,7 +43,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 0 0;
+    padding: 35px 89px 0;
     text-align: left;
     margin: 0 auto;
     display: flex;
@@ -77,12 +78,12 @@
 .infoblock-energy__sub-title {
   color: $color-white;
   margin-bottom: 29px;
+  text-transform: uppercase;
 
   @include font-oswald-regular(14,14);
 
   @media (min-width: $tablet-width) {
     color: $color-black;
-    text-transform: uppercase;
     margin-bottom: 49px;
 
     @include font-oswald-regular(20,20);
@@ -110,8 +111,14 @@
 .infoblock-energy__button {
   width: 100%;
   display: inline-block;
+  height: 40px;
+
+  @include font-oswald-regular(14,40);
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    height: 54px;
+
+    @include font-oswald-regular(20,54);
   }
 }
