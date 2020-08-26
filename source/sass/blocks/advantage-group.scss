@@ -53,7 +53,7 @@
     background-position: center;
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
     &--leaf::before {
       background-image: url("../img/advantage-leaf@2x.png");
       background-size: 50%;

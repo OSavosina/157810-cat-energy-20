@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 100%;
-    padding: 70px 50px 57px;
+    padding: 70px 50px 37px;
     margin-top: 30px;
   }
 
@@ -27,7 +27,7 @@
 
     height: 374px;
     margin-bottom: 36px;
-    padding: 50px 52px;
+    padding: 50px 32px;
   }
 }
 
@@ -157,7 +157,7 @@
   justify-content: flex-start;
   color: $color-black;
   text-transform: uppercase;
-  padding: 35px 0 0;
+  padding: 20px 0;
   cursor: pointer;
   position: relative;
 
@@ -172,5 +172,9 @@
     width: 32px;
     height: 10px;
     margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
